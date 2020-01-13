@@ -10,6 +10,10 @@ the t85_default_entry_jumper_PB5.hex in the micronucleus directory.
 The repository holds the micronucleus firmware, the micronucleus commandline, the windows USB driver and a software example in free pascal to handle the soft reset-button.
 
 I made one using the through hole version from Danjovic (https://github.com/Danjovic/Nanite)
- on a veroboard for fun ... ;) Works like a charm !!!!
+ on a veroboard for fun ... ;) 
+ 
+ Works like a charm !!!!
+ 
+ PS: FYI, I used a recent trunk Free Pascal ( 10/01/2020 ).
 
 ![The Nanite 85](Nanite_Through_Hole_FreePascal.jpg)
