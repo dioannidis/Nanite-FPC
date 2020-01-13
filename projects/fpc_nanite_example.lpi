@@ -119,9 +119,6 @@
 -Sm
 -CpAVR25
 -WpATTINY85
--XPavr-
--FDG:\Programming\dimitris\tools\avr8-gnu-toolchain\bin
--dDEBUGUNITS
 -dF_CPU:=8000000"/>
     </Other>
   </CompilerOptions>
