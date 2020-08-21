@@ -52,7 +52,11 @@
 -Sm
 -CpAVR25
 -WpATTINY85
--dF_CPU:=8000000"/>
+-dF_CPU:=16500000"/>
+            <ExecuteAfter>
+              <Command Value="$(ProjPath)..\micronucleus\commandline\micronucleus.exe --run $Path($(OutputFile))$NameOnly($(OutputFile)).hex"/>
+              <CompileReasons Compile="False" Run="False"/>
+            </ExecuteAfter>
           </Other>
         </CompilerOptions>
       </Item>
@@ -119,7 +123,11 @@
 -Sm
 -CpAVR25
 -WpATTINY85
--dF_CPU:=8000000"/>
+-dF_CPU:=16500000"/>
+      <ExecuteAfter>
+        <Command Value="$(ProjPath)..\micronucleus\commandline\micronucleus.exe --run $Path($(OutputFile))$NameOnly($(OutputFile)).hex"/>
+        <CompileReasons Compile="False" Run="False"/>
+      </ExecuteAfter>
     </Other>
   </CompilerOptions>
   <Debugging>

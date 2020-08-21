@@ -24,13 +24,13 @@ procedure nanite_poll(constref ALedOn: Boolean);
 
 implementation
 
-//Delay 40 cycles
-//5us at 8.0 MHz
+//Delay 82 cycles
+//5us at 16.5 MHz
 procedure _delay_us_5; assembler; nostackframe;
 label
   L1;
 asm
-    LDI     r18, 13
+    LDI     r18, 27
   L1:
     DEC     r18
     BRNE    L1

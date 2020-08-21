@@ -34,15 +34,15 @@ program fpc_nanite_example;
 uses
   fpc_nanitelib;
 
-//Delay 4 000 000 cycles
-//500ms at 8.0 MHz
-procedure _delay_ms_500; assembler; nostackframe;
+//Delay 8250000 cycles
+//500ms at 16.5 MHz
+procedure _delay_ms_500; assembler; nostackframe; inline;
 Label
   L1;
 asm
-    ldi  r18, 21
-    ldi  r19, 75
-    ldi  r20, 191
+    ldi  r18, 42
+    ldi  r19, 219
+    ldi  r20, 44
   L1:
     dec  r20
     brne L1
@@ -50,7 +50,6 @@ asm
     brne L1
     dec  r18
     brne L1
-    nop
 end;
 
 var
